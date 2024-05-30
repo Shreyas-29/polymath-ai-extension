@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<img src="https://github.com/Shreyas-29/polymath-ai-extension/assets/111555846/bb23c90f-b279-429e-a666-01b9a86dd520" alt="Logo" width="60px"> 
 
-## Getting Started
+# Polymath AI Chrome Extension
 
-First, run the development server:
+## Description
+This Chrome extension allows users to save the URL of the current page they are visiting with a single click. Users can also view all saved URLs in a separate tab. The extension uses Manifest V3, Node.js, Next.js, and Firebase as the backend database.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
+- Next.js
+- Firebase
+- Chrome Extensions API
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
+- **Save Current Page URL:** Users can save the URL of the page they are currently on.
+- **View Saved URLs:** Users can view all the URLs they have saved in a list format.
+- **Copy URL:** Users can copy any saved URL to the clipboard.
+- **Delete URL:** Users can delete any saved URL from the list.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Assumptions
+- Each user will have their own list of URLs.
+- Users must be authenticated to save and view their URLs.
+- Basic familiarity with Chrome Extensions and Firebase setup.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Pain Points
+1. **Integration of Firebase in Plain JS:**
+   - Error encountered: `Uncaught SyntaxError: Cannot use import statement outside a module`.
+   - Solution: Firebase integration is straightforward in Next.js, but integrating Firebase in plain JavaScript for a Chrome extension proved challenging due to module system differences.
 
-## Learn More
+2. **Google Auth Authentication:**
+   - Error encountered during Google Auth: Issues with integrating Firebase Auth with plain JS.
+   - Solution: Using Firebase Authentication in a plain JS environment requires additional configurations and handling that are natively supported in Next.js.
 
-To learn more about Next.js, take a look at the following resources:
+## Error Screenshots
+![Save URL Tab](https://github.com/Shreyas-29/polymath-ai-extension/assets/111555846/f8b07370-53f5-407c-800d-0535ebda7dd0)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Conclusion
+I have developed a Chrome extension that allows users to save and view URLs using HTML, CSS, JavaScript, and Next.js, with Firebase as the backend. This project provided a valuable learning experience, especially in terms of integrating Firebase and handling Google Authentication within a plain JavaScript environment. I have gained a deeper understanding of using Firebase with Chrome Extension APIs and Next.js. While there were challenges, particularly with the module system and authentication, I have been able to overcome many of them and build a functional extension. I am confident in my ability to tackle similar challenges in future projects and am excited to continue learning and improving.
