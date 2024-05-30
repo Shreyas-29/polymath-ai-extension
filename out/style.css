@@ -1,0 +1,154 @@
+* {
+    font-family: "Inter", sans-serif !important;
+}
+
+body {
+    background-color: #fafafa;
+    border-radius: 12px;
+    min-width: 550px;
+}
+
+/* Reset default browser styles */
+body, button, ul, li {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#authSection {
+    margin-bottom: 10px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #e4e4e7;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #ddd;
+    border: none;
+    border-bottom: 2px solid transparent;
+    text-align: center;
+}
+
+.tab.active {
+    background-color: #fff;
+    border-bottom: 2px solid #000;
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-image {
+    width: auto;
+    height: 80px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-text {
+    color: #333;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 20px 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #e4e4e7;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li span {
+    flex: 1;
+}
+
+.copy-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.copy-btn:hover {
+    background-color: #218838;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.url-link {
+    text-decoration: none;
+    color: #000;
+    flex-grow: 1;
+}

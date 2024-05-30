@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polymath AI Saved URLs</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="popup.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Polymath AI URL Saver</h1>
+      <div id="authSection">
+        <button id="signInButton" class="btn">Sign In with Google</button>
+        <button id="signOutButton" class="btn" style="display: none">
+          Sign Out
+        </button>
+      </div>
+      <div class="tabs">
+        <button id="saveUrlTab" class="tab active">Save Current URL</button>
+        <button id="viewUrlsTab" class="tab">View Saved URLs</button>
+      </div>
+      <div class="tab-content">
+        <div id="saveUrlContent" class="content active">
+          <img src="/bookmarks.png" alt="bookmarks" class="intro-image" />
+          <p class="intro-text">
+            Save your favorite URLs with a single click and access them anytime
+            from the 'View Saved URLs' tab.
+          </p>
+          <button id="saveUrlButton" class="btn">Save URL</button>
+        </div>
+        <div id="viewUrlsContent" class="content">
+          <ul id="urlList"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

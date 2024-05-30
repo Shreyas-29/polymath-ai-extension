@@ -2,7 +2,7 @@ import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 import { initializeApp, getApps } from 'firebase/app';
 import { getFirestore } from "@firebase/firestore";
 
-// Load .env variables
+// Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyADkHESO7_7uRgU_9Oc2OY06aA73ypQhRA",
     authDomain: "polymath-url-saver.firebaseapp.com",
