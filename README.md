@@ -5,6 +5,11 @@
 ## Description
 This Chrome extension allows users to save the URL of the current page they are visiting with a single click. Users can also view all saved URLs in a separate tab. The extension uses Manifest V3, Node.js, Next.js, and Firebase as the backend database.
 
+## Demo
+
+https://github.com/Shreyas-29/url-saver-extension/assets/111555846/3acdae41-454d-401c-8d99-f272923ad67c
+
+
 ## Tech Stack
 - HTML
 - CSS
